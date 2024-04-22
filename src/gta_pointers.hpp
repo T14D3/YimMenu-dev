@@ -369,6 +369,7 @@ namespace big
 
 		uintptr_t* m_cam_gameplay_director;
 		functions::cam_gameplay_directory_update m_cam_gameplay_director_update;
+		PVOID m_format_int;
 	};
 #pragma pack(pop)
 	static_assert(sizeof(gta_pointers) % 8 == 0, "Pointers are not properly aligned");

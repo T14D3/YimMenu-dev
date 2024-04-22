@@ -1789,6 +1789,13 @@ namespace big
             [](memory::handle ptr)
             {
                 g_pointers->m_gta.m_cam_gameplay_director_update = ptr.sub(0x32).as<functions::cam_gameplay_directory_update>();
+        // Format Integer
+        {
+            "FI",
+            "48 83 EC ? 44 88 4C 24",
+            [](memory::handle ptr)
+            {
+                g_pointers->m_gta.m_format_int = ptr.as<PVOID>();
             }
         }
         >(); // don't leave a trailing comma at the end
